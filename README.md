@@ -113,7 +113,7 @@ La arquitectura actual permite agregar mas servidores siempre que puedan tener a
 En el caso de querer implementar otro servidor spark solo debe introducirlo en la ruta de este repositorio y especificar las variables de entorno para que se comunique via https a otro servidor.
 
 ****
-### :chart_with_downwards_trend: Prerrequisitos
+### :computer: Prerrequisitos
 
 -   [Git](https://git-scm.com/downloads) - Sistema de control de versiones
 -   [Maven](https://maven.apache.org/download.cgi) - Gestor de dependencias
