@@ -8,19 +8,19 @@ Desarrolle una aplicación Web segura con los siguientes requerimientos:
 
 **** 
 
-## :newspaper: Diseño 
+## :newspaper: DISEÑO 
 
 La arquitectura consiste en conectar un cliente por medio del protocolo seguros https, que es la convinacion de ssl y http y a su vez se debe crear otro servidor que también sea accesible por https pero estos servidores deben poder conectarse mutuamente entre si por un medio seguro como lo es https.
 
-## :mag_right: Arquitectura 
+## :mag_right: ARQUITECTURA
 
 ![image](https://user-images.githubusercontent.com/63822072/227381284-64f1072c-58c0-4b2c-95fd-0c5909840a46.png)
 
 ****
 
-## :bulb: Construcción 
+## :bulb:CONSTRUCCIÓN 
 
-### CREACIÓN DE SERVIDORES
+### :outbox_tray: CREACIÓN DE SERVIDORES
 
 ![image](https://user-images.githubusercontent.com/63822072/227381368-0778a22c-bd92-4cf9-8b83-c2829171704a.png)
 
