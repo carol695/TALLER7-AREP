@@ -10,7 +10,7 @@ Desarrolle una aplicación Web segura con los siguientes requerimientos:
 
 ## :newspaper: Diseño 
 
-Aplicación Web segura
+La arquitectura consiste en conectar un cliente por medio del protocolo seguros https, que es la convinacion de ssl y http y a su vez se debe crear otro servidor que también sea accesible por https pero estos servidores deben poder conectarse mutuamente entre si por un medio seguro como lo es https.
 
 ## :mag_right: Arquitectura 
 
@@ -24,7 +24,7 @@ Aplicación Web segura
 
 ![image](https://user-images.githubusercontent.com/63822072/227381368-0778a22c-bd92-4cf9-8b83-c2829171704a.png)
 
-### CONFIGURACIÓN DE SERVIDORES  
+### :game_die: CONFIGURACIÓN DE SERVIDORES  
 
 Cada servidor tiene un end-point para conectarse localmente con el mismo y otro end-point para conectarse al otro servidor.
 
@@ -36,13 +36,13 @@ Cada servidor tiene un end-point para conectarse localmente con el mismo y otro 
 
 ![image](https://user-images.githubusercontent.com/63822072/227381671-ef22bde0-a04a-445d-ad80-4e1b143f1df3.png)
 
-### CLASE URLReader
+### :jigsaw: CLASE URLReader
 
 Ambos servidores se conectan a la clase URLReader, la cual se encarga de validar los certificados validos que aceptará el servidor
 
 ![image](https://user-images.githubusercontent.com/63822072/227381760-f373046c-0a7c-4883-983f-03c37debc23d.png)
 
-### CREACIÓN DE CERTIFICADOS 
+### :page_facing_up: CREACIÓN DE CERTIFICADOS 
 
 1. Se creo una carpeta llamada certificates en la raiz del proyecto
 2. Se creo dos carpetas para cada maquina
@@ -76,13 +76,13 @@ Ambos servidores se conectan a la clase URLReader, la cual se encarga de validar
 
 ![image](https://user-images.githubusercontent.com/63822072/227382541-aebdb69c-01e8-4f70-9af8-2a05b72f8894.png)
 
-### CREACIÓN DE INSTANCIAS
+### :label: CREACIÓN DE INSTANCIAS
 
 ![image](https://user-images.githubusercontent.com/63822072/227382855-10178fab-504d-424a-9a22-531c11b135a1.png)
 
 **En cada una de las instancias se coloca el target y se instala java.** y luego se corre para probar las maquinas  
 
-### Pruebas
+### :chart: PRUEBAS
 
 #### MAQUINA 1
 
@@ -106,6 +106,11 @@ A maquina 1
 
 ![image](https://user-images.githubusercontent.com/63822072/227383309-8321563e-0dbc-4308-83a9-10a2ec2cbcec.png)
 
+### :chart_with_downwards_trend: ESCALABILIDAD
+
+La arquitectura actual permite agregar mas servidores siempre que puedan tener acceso a la llave en la que deben confiar. solo se debe especificar las variables. esto gracias a que cada servidro son instacias separadas y no deben inteferir
+
+En el caso de querer implementar otro servidor spark solo debe introducirlo en la ruta de este repositorio y especificar las variables de entorno para que se comunique via https a otro servidor.
 
 ****
 ### :chart_with_downwards_trend: Prerrequisitos
