@@ -1,4 +1,4 @@
-package org.example.server1;
+package org.example.servers.server1;
 
 import org.example.URLReader;
 
